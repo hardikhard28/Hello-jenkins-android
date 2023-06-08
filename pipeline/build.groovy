@@ -14,7 +14,7 @@ pipeline {
                 }
             }
         }
-        stage('Checkout') {
+        stage('Build gradle') {
             steps {
                 script {
                     // Use the checkout step to clone the Git repository
