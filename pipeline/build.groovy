@@ -18,6 +18,7 @@ pipeline {
             steps {
                 script {
                     // Use the checkout step to clone the Git repository
+                    sh "chmod +x gradlew"
                     sh "./gradlew build"
                 }
             }
