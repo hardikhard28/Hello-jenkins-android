@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     // Use the checkout step to clone the Git repository
-                    sh "gradle build"
+                    sh "./gradlew build"
                 }
             }
         }
