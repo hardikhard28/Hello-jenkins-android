@@ -19,7 +19,7 @@ pipeline {
                 script {
                     // Use the checkout step to clone the Git repository
                     
-                    bat "gradle build"
+                    bat ".\gradlew build"
                 }
             }
         }
