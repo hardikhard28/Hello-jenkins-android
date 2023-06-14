@@ -14,15 +14,15 @@ pipeline {
                 }
             }
         }
-        stage('Build gradle') {
-            steps {
-                script {
-                    // Use the checkout step to clone the Git repository
-                    sh "chmod +x gradlew"
-                    sh "./gradlew build"
-                }
-            }
-        }
+        // stage('Build gradle') {
+        //     steps {
+        //         script {
+        //             // Use the checkout step to clone the Git repository
+        //             sh "chmod +x gradlew"
+        //             sh "./gradlew build"
+        //         }
+        //     }
+        // }
         
         
     }
