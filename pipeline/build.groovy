@@ -18,8 +18,8 @@ pipeline {
             steps {
                 script {
                     // Use the checkout step to clone the Git repository
-                    
-                    sh "./gradlew build"
+                    echo "admin" | sh 'sudo -S ./gradlew build'
+                    // sh "sudo ./gradlew build"
                 }
             }
         }
